@@ -38,12 +38,13 @@ module.exports = (env, options) => {
           }
         },
         {
-          test: /\.[s]?s(c|a)ss$/,
+          test: /\.s(c|a)ss$/,
           use: [
             "style-loader",
             MiniCssExtractPlugin.loader,
             'css-loader',
             'sass-loader',
+            'postcss-loader',
           ],
         }
       ]
