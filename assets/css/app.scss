@@ -1,24 +1,21 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-.wrapper{
+.wrapper {
   min-height: 100vh;
+  min-width: 100vw;
   padding: 1rem;
 }
 
-.todo_list__item{
+.todo_list__item {
   margin: 0.7rem;
   padding: 0.5rem;
   border-radius: 6px;
   background-color: white;
-  box-shadow:
-  0 0.2px 1.9px rgba(0, 0, 0, 0.018),
-  0 0.5px 4.3px rgba(0, 0, 0, 0.026),
-  0 1px 7.7px rgba(0, 0, 0, 0.032),
-  0 1.6px 12.8px rgba(0, 0, 0, 0.038),
-  0 2.6px 21.2px rgba(0, 0, 0, 0.044),
-  0 4.6px 37px rgba(0, 0, 0, 0.052),
-  0 10px 80px rgba(0, 0, 0, 0.07)
-;
+  max-width: 800px;
+  box-shadow: 0 0.2px 1.9px rgba(0, 0, 0, 0.018),
+    0 0.5px 4.3px rgba(0, 0, 0, 0.026), 0 1px 7.7px rgba(0, 0, 0, 0.032),
+    0 1.6px 12.8px rgba(0, 0, 0, 0.038), 0 2.6px 21.2px rgba(0, 0, 0, 0.044),
+    0 4.6px 37px rgba(0, 0, 0, 0.052), 0 10px 80px rgba(0, 0, 0, 0.07);
 }
