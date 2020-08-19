@@ -7,9 +7,7 @@ const TodoApp = () => {
   return (
     <ApolloProvider client={client}>
       <div className='wrapper bg-gray-100'>
-        <h1 className='text-6xl'>
-          What <span className='italic font-semibold'>ToDo</span>?
-        </h1>
+        <h1 className='text-4xl'>Elixir, Graphql & React</h1>
         <TodoList />
       </div>
     </ApolloProvider>
