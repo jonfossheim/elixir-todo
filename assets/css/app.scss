@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
   min-width: 100vw;
   padding: 1rem;
@@ -27,4 +31,10 @@
   padding: 2rem;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo_list__spacer {
+  flex: 1;
 }
