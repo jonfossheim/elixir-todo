@@ -8,7 +8,7 @@
   padding: 1rem;
 }
 
-.todo_list__item {
+.todo_item {
   margin: 0.7rem;
   padding: 0.5rem;
   border-radius: 6px;
@@ -18,4 +18,8 @@
     0 0.5px 4.3px rgba(0, 0, 0, 0.026), 0 1px 7.7px rgba(0, 0, 0, 0.032),
     0 1.6px 12.8px rgba(0, 0, 0, 0.038), 0 2.6px 21.2px rgba(0, 0, 0, 0.044),
     0 4.6px 37px rgba(0, 0, 0, 0.052), 0 10px 80px rgba(0, 0, 0, 0.07);
+}
+
+.todo_item__content {
+  width: 100%;
 }
