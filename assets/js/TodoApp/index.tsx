@@ -6,10 +6,7 @@ import TodoList from './TodoList';
 const TodoApp = () => {
   return (
     <ApolloProvider client={client}>
-      <div className='wrapper bg-gray-100'>
-        <h1 className='text-4xl'>Elixir, Graphql & React</h1>
-        <TodoList />
-      </div>
+      <TodoList />
     </ApolloProvider>
   );
 };
