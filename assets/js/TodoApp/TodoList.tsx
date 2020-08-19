@@ -26,13 +26,11 @@ const TodoList = () => {
 
   return (
     <div className='todo_list bg-gray-100'>
-      <h3>hello</h3>
+      <h3 className={'text-4xl'}>make a todo (: </h3>
       <ul className='todo_list__list'>
         {data?.todoItems
           ? data.todoItems
-              .sort((x, y) => {
-                return x === y ? 0 : x ? -1 : 1;
-              })
+              .sort((x: any, y: any) => x.isCompleted - y.isCompleted)
               .map((item) => <TodoListItem key={item.id} {...item} />)
           : null}
       </ul>

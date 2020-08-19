@@ -43,9 +43,7 @@ const TodoListItem = ({ id, content, isCompleted }: TodoItem) => {
         data: {
           todoItems: todoItems
             .filter((item: TodoItem) => item.id !== id)
-            .sort((x, y) => {
-              return x === y ? 0 : x ? -1 : 1;
-            }),
+            .sort((x: any, y: any) => x.isCompleted - y.isCompleted),
         },
       });
     },
